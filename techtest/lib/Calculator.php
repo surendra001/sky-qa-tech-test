@@ -1,6 +1,6 @@
 <?php
 
-class Calculator implements iCalculator {
+class Calculator implements iCalculator,iScientificCalculator {
 
     protected $stack;
     protected $op;
@@ -20,6 +20,21 @@ class Calculator implements iCalculator {
     
     public function divide($a, $b) {
         return ($a / $b);
+    }
+
+
+    public function cuberoot($a) {
+        return ($a^3 = 100);
+    }
+
+    public function decToHex($a) {
+        return (dechex($a));
+    }
+
+    public function factorial($a) {
+		if($a == 0) return 1;
+        return ($a * factorial($a - 1) );        
+
     }
 
     public function pressNumber($number) {
@@ -86,3 +101,6 @@ class Calculator implements iCalculator {
         return $value;
     }
 }
+
+
+?>
