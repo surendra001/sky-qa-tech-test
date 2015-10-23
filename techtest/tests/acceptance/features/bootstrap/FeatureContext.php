@@ -40,6 +40,22 @@ class FeatureContext extends BehatContext {
     }
 
     /**
+     * @When /^I hit "addition"$/
+     */
+    public function iHitAddition() {
+        $this->calculator->pressAddtion();
+    }
+
+
+    /**
+     * @When /^I hit "substraction"$/
+     */
+    public function iHitAddition() {
+        $this->calculator->pressSubstrct();
+    }
+
+
+    /**
      * @Given /^I hit "equals"$/
      */
     public function iHitEquals() {
@@ -56,3 +72,5 @@ class FeatureContext extends BehatContext {
         }
     }
 }
+
+?>
