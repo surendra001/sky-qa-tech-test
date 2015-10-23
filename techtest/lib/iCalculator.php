@@ -7,3 +7,5 @@ interface iCalculator {
     public function multiply($a, $b);
     public function divide($a, $b);
 }
+
+?>

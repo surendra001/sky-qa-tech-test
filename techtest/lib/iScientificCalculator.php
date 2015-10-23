@@ -6,3 +6,6 @@ interface iScientificCalculator extends iCalculator {
     public function factorial($a);
     public function decToHex($a);
 }
+
+
+?>

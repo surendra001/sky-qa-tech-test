@@ -86,3 +86,5 @@ class Calculator implements iCalculator {
         return $value;
     }
 }
+
+?>
