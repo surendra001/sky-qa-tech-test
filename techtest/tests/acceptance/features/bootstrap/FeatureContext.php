@@ -72,3 +72,5 @@ class FeatureContext extends BehatContext {
         }
     }
 }
+
+?>
